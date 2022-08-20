@@ -49,6 +49,7 @@ Panel::Panel(wxWindow *parent,
 frame::frame(const wxString & title) : wxFrame(NULL,wxID_ANY,title,wxDefaultPosition,wxSize(350,368))
 {
 
+ SetIcon(wxIcon("../Nodawa.png"));
  panelObject = new Panel(this);
 
 }
