@@ -4,7 +4,7 @@ Nodawa is an application that help you to backup your android partitions. Cause 
 ## Installation
 first of all, you need to clone the repository:
 ```
-git clone https://github.com/Mamograg17/Triple-Tweny.git
+git clone https://github.com/Mamograg17/Nodawa.git
 ```
 then go to the cloned folder, and run this:
 ```
@@ -18,7 +18,7 @@ the next command will build the executable from source:
 ```
 make
 ```
-the final command will install triple-tweny to your system:
+the final command will install Nodawa to your system:
 ```
 sudo make install
 ```
