@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
-project(Nodawa VERSION 1.0 LANGUAGES CXX)
+project(KASLO VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -17,8 +17,8 @@ find_package(wxWidgets 3.1 REQUIRED COMPONENTS net core base)
 if(wxWidgets_FOUND)
   message("-- You have wxWidgets installed in system, so no need to install it again.")
   include(${wxWidgets_USE_FILE})
-  add_executable(Nodawa src/application.cpp src/frame.cpp)
-  target_link_libraries(Nodawa ${wxWidgets_LIBRARIES})
+  add_executable(Kaslo src/application.cpp src/frame.cpp)
+  target_link_libraries(Kaslo ${wxWidgets_LIBRARIES})
 
 #if wxwidgets is not found
 else(NOT wxWidgets_FOUND)
