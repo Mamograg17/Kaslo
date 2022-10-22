@@ -1,7 +1,7 @@
 /*
  Name: application.hpp
 
- Purpose: this file holdes the defination of the main application's
+ Purpose: this file contains the defination of the main application's
           class.
 
  Author: mamograg(Akram Ouizid)
