@@ -16,7 +16,7 @@ IMPLEMENT_APP(application);
 
 bool application::OnInit()
 {
-   frame * applicationFrame = new frame("NodawaGUI");
+   frame * applicationFrame = new frame("KasloGUI");
 
    applicationFrame->Show();
    
