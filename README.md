@@ -1,10 +1,10 @@
-# Nodawa
-### what is Nodawa
-Nodawa is an application that help you to backup your android partitions. Cause from time to time, people love to change the ROM they use or they want to do something that will wipe there data, so to backup the current partitions to restore them in the future, Nodawa will help you with its GUI.
+# Kaslo
+### what is Kaslo
+Kaslo is an application that help you to backup your android partitions. Cause from time to time, people love to change the ROM they use or they want to do something that will wipe there data, so to backup the current partitions to restore them in the future, Nodawa will help you with its GUI.
 ## Installation
 first of all, you need to clone the repository:
 ```
-git clone https://github.com/Mamograg17/Nodawa.git
+git clone https://github.com/Mamograg17/Kaslo.git
 ```
 then go to the cloned folder, and run this:
 ```
@@ -18,7 +18,7 @@ the next command will build the executable from source:
 ```
 make
 ```
-the final command will install Nodawa to your system:
+the final command will install Kaslo to your system:
 ```
 sudo make install
 ```
