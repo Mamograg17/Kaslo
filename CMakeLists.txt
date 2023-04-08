@@ -15,10 +15,10 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O2")
 find_package(wxWidgets 3.1 REQUIRED COMPONENTS net core base)
 
 if(wxWidgets_FOUND)
-  message("-- You have wxWidgets installed in system, so no need to install it again.")
+  message("-- You have wxWidgets installed in system.")
   include(${wxWidgets_USE_FILE})
-  add_executable(Kaslo src/application.cpp src/frame.cpp)
-  target_link_libraries(Kaslo ${wxWidgets_LIBRARIES})
+  add_executable(kaslo src/application.cpp src/frame.cpp)
+  target_link_libraries(kaslo ${wxWidgets_LIBRARIES})
 
 #if wxwidgets is not found
 else(NOT wxWidgets_FOUND)
@@ -43,8 +43,8 @@ else(NOT wxWidgets_FOUND)
        message("--building the program again:")
        find_package(wxWidgets 3.0 REQUIRED COMPONENTS net core base)
        include(${wxWidgets_USE_FILE})
-       add_executable(Nodawa src/application.cpp src/frame.cpp)
-       target_link_libraries(Nodawa ${wxWidgets_LIBRARIES})
+       add_executable(kaslo src/application.cpp src/frame.cpp)
+       target_link_libraries(kaslo ${wxWidgets_LIBRARIES})
 
      endif(ARCH_FOUND)
    
@@ -64,8 +64,8 @@ else(NOT wxWidgets_FOUND)
        message("--building the program again:")
        find_package(wxWidgets 3.0 REQUIRED COMPONENTS net core base)
        include(${wxWidgets_USE_FILE})
-       add_executable(Nodawa src/application.cpp src/frame.cpp)
-       target_link_libraries(Nodawa ${wxWidgets_LIBRARIES})
+       add_executable(kaslo src/application.cpp src/frame.cpp)
+       target_link_libraries(kaslo ${wxWidgets_LIBRARIES})
 
      endif (DEBIAN_FOUND)
 
@@ -85,10 +85,13 @@ else(NOT wxWidgets_FOUND)
         message("--building the program again:")
         find_package(wxWidgets 3.0 REQUIRED COMPONENTS net core base)
         include(${wxWidgets_USE_FILE})
-        add_executable(Nodawa src/application.cpp src/frame.cpp)
-        target_link_libraries(Nodawa ${wxWidgets_LIBRARIES})
+        add_executable(kaslo src/application.cpp src/frame.cpp)
+        target_link_libraries(kaslo ${wxWidgets_LIBRARIES})
      endif (FEDORA_FOUND)
 
    endif(LINUX)
 
 endif(wxWidgets_FOUND)
+
+include(CPack)
+install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/kaslo DESTINATION bin)
