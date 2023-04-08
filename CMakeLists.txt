@@ -92,7 +92,3 @@ else(NOT wxWidgets_FOUND)
    endif(LINUX)
 
 endif(wxWidgets_FOUND)
-
-include(CPack)
-
-install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/Nodawa DESTINATION bin)
