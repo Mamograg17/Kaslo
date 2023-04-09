@@ -34,7 +34,7 @@ Panel::Panel(wxWindow *parent,
  partitionsBox->Insert("dtbo",5);
  partitionsBox->Insert("recovery",6);
  partitionsBox->Insert("cache",7);
- partitionsBox->Insert("data",8);
+ partitionsBox->Insert("userdata",8);
  
  staticLine = new wxStaticLine(this,wxID_ANY,wxPoint(5,312),wxSize(340,3));
  
