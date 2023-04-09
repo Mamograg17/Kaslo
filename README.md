@@ -6,7 +6,7 @@ first of all, you need to clone the repository:
 ```
 git clone https://github.com/Mamograg17/Kaslo.git
 ```
-then go to the cloned folder, and run this:
+then
 ```
 cmake -B build -G "Unix Makefiles"
 ```
