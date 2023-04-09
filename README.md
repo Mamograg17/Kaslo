@@ -1,6 +1,10 @@
 # Kaslo
 ### what is Kaslo
 Kaslo is an application that help you to backup your android partitions. Cause from time to time, people love to change the ROM they use or they want to do something that will wipe there data, so to backup the current partitions to restore them in the future, Kaslo will help you with its GUI.
+## requirements
+○ adb
+○ wxwidegts
+○ CMake
 ## Installation
 first of all, you need to clone the repository:
 ```
